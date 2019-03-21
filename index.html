@@ -1,0 +1,81 @@
+<html lang="en">
+
+  <head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>Walkthrough Site</title>
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+<!-- CSS Files -->
+  <link rel="stylesheet" type="text/css" href="nav.css">
+  <link rel="stylesheet" type="text/css" href="slideshow.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
+
+<!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  </head>
+
+<body>
+
+<!-- Nav Bar -->
+
+  <nav>
+
+    <div class="toggle">
+          <i class="fas fa-bars menu"></i>
+    </div>
+
+
+    <ul>
+
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+
+    </ul>
+  </nav>
+
+<!-- Slideshow -->
+
+<slider>
+  <slide><p> Experience </p></slide>
+  <slide><p> Dedication </P></slide>
+  <slide><p> Ambition </P></slide>
+  <slide><p> Core </p></slide>
+</slider>
+
+<!-- Footer -->
+
+<div class="footer">
+  <p>
+    <span id="text">All rights Reserved @ CCS</span>
+    <span id="icons">
+      <a href="#"> <i class="fa fa-facebook-square"></i> </a>
+      <a href="#"> <i class="fa fa-twitter" ></i> </a>
+      <a href="#"> <i class="fa fa-youtube-play"></i> </a>
+    </span>
+  </p>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.menu').click(function(){
+          console.log('hi');
+          $('ul').toggleClass('active');
+        })
+      })
+    </script>
+
+
+</body>
+</html>
